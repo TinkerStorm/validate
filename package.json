@@ -1,6 +1,6 @@
 {
   "name": "@tinkerstorm/validate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Junior <sudojunior@outlook.com>",
   "description": "Verify arguments in runtime javascript.",
   "main": "index.js",
