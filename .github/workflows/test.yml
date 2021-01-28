@@ -6,8 +6,8 @@ on:
 
 jobs:
   test:
-    name: Node.js ${{ matrix.node-version }}
-    runs-on: ${{ matrix.runs-on }}
+    name: Node.js ${{ matrix.node-version }} on ${{ matrix.runs }}
+    runs-on: ${{ matrix.runs-on }}-latest
     
     strategy:
       fail-fast: false
@@ -19,9 +19,9 @@ jobs:
           - 12
     
         runs-on:
-          - ubuntu-latest
-          - windows-latest
-          - macos-latest
+          - ubuntu
+          - windows
+          - macos
     
     steps:
       - name: 📫 Check mailbox
