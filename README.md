@@ -17,7 +17,7 @@ function validate(origin, args) {
 }
 ```
 
-At the end of it all, this first working version probably took around 3 or 4 hours (including testing and minor patches). The code beor
+At the end of it all, this first working version probably took around 3 or 4 hours (including testing and minor patches).
 
 ## Credit
 
