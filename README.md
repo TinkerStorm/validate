@@ -1,5 +1,11 @@
 # [@tinkerstorm/validate](https://npmjs.org/package/@tinkerstorm/validate)
 
+![CI status](https://github.com/TinkerStorm/validate/workflows/CI/badge.svg)
+![NPM build](https://badgen.net/npm/v/@tinkerstorm/validate)
+![NPM types](https://badgen.net/npm/types/@tinkerstorm/validate)
+![GitHub license](https://badgen.net/github/license/TinkerStorm/validate)
+![GitHub stars](https://badgen.net/github/stars/TinkerStorm/validate)
+
 ## Why?
 
 Why not? Some code is designed to look like it shouldn't exist, but does anyway and works just as well. It was originally designed to be a simple 'private' method that would sit in a class structure or module without the need to use it elsewhere.
