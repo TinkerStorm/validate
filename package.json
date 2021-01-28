@@ -1,0 +1,22 @@
+{
+  "name": "@tinkerstorm/validate",
+  "version": "1.0.0",
+  "author": "Junior <sudojunior@outlook.com>",
+  "description": "Verify arguments in runtime javascript.",
+  "main": "index.js",
+  "repository": "https://github.com/TinkerStorm/validate",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "xo": "^0.37.1"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "type": "module",
+  "xo": {
+    "rules": {
+      "unicorn/no-array-reduce": 0
+    }
+  }
+}
