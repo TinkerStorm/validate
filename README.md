@@ -29,5 +29,5 @@ At the end of it all, this first working version probably took around 3 or 4 hou
 
 While I do like what I've accomplished here, it is still a joke in many ways and there are people I'd like to thank for supporting what I do or those who I look up to as inspiration.
 
-- [@Koltonix](https://github.com/Koltonix) and [@Mistiaire](https://github.com/Mistiaire) for their guidance and support.
+- [@Koltonix](https://github.com/Koltonix) and [@Mistiare](https://github.com/Mistiare) for their guidance and support.
 - [@sindresorhus](https://github.com/sindresorhus) for continuing to provide the basis on how I, personally, should build my modules and projects (or at least a target to aim for).
