@@ -17,7 +17,6 @@ jobs:
           # LTS
           - 14
           - 12
-          - 10
     
         runs-on:
           - ubuntu-latest
