@@ -19,5 +19,9 @@
       "unicorn/no-array-reduce": 0,
       "capitalized-comments": 0
     }
-  }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
 }
