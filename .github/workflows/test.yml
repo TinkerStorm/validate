@@ -1,13 +1,15 @@
-name: CI
+name: Build
 
 on:
-  - push
-  - pull_request
+  push:
+    branches-ignore:
+      - main
+  pull_request:
 
 jobs:
   test:
-    name: Node.js ${{ matrix.node-version }} on ${{ matrix.runs }}
-    runs-on: ${{ matrix.runs-on }}-latest
+    name: Node.js ${{ matrix.node-version }}
+    runs-on: ubuntu-latest
     
     strategy:
       fail-fast: false
@@ -17,11 +19,6 @@ jobs:
           # LTS
           - 14
           - 12
-    
-        runs-on:
-          - ubuntu
-          - windows
-          - macos
     
     steps:
       - name: 📫 Check mailbox
