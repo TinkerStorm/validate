@@ -8,7 +8,6 @@
 
 ## Open Issues
 
-- [#2 - Use of 'options.optional'](https://github.com/TinkerStorm/validate/issues/2)
 - [#4 - Thrown error scope](https://github.com/TinkerStorm/validate/issues/4)
 
 ## API
