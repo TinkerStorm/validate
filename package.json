@@ -11,7 +11,8 @@
     "xo": "^0.37.1"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "test:verbose": "xo --verbose && ava --verbose"
   },
   "type": "module",
   "xo": {
