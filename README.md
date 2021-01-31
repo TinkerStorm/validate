@@ -6,9 +6,43 @@
 ![GitHub license](https://badgen.net/github/license/TinkerStorm/validate)
 ![GitHub stars](https://badgen.net/github/stars/TinkerStorm/validate)
 
-## Known Issues
+## Open Issues
 
 - [#2 - Use of 'options.optional'](https://github.com/TinkerStorm/validate/issues/2)
+- [#4 - Thrown error scope](https://github.com/TinkerStorm/validate/issues/4)
+
+## API
+
+### validate(origin: string, args: ValidateOptions[])
+
+#### origin
+
+Where the function is called from (human-readable string).
+
+#### args
+
+A list of arguments that define how the function accepts parameters.
+
+---
+
+### ValidateOptions
+
+| Argument           | Type                     | Description                                                                  |
+| ------------------ | ------------------------ | ---------------------------------------------------------------------------- |
+| `name`             | string                   | Name of the argument as a string literal.                                    |
+| `value`            | any                      | The value of the argument as anything that the `types` and `options` accept. |
+| `types`            | string, object, function | An array of type resolvers.                                                  |
+| `options`          | object?                  | Argument options, can be omitted.                                            |
+| `options.inverse`  | boolean?                 | Flip the condition state.                                                    |
+| `options.rest`     | boolean?                 | Process the argument as an array.                                            |
+| `options.optional` | boolean?                 | Make the argument not throw if it's null / undefined. Short hand check.      |
+
+## API (Future)
+
+*Remains to be said or written in stone. Support for decorators is on next major release.*
+
+- `validate.one(origin: string, name: string, value: any, types: (string | object | () => boolean)[], options?: ValidateOptions)`
+- `validate.arg(types: (string | object | () => boolean)[], options?: ValidateOptions)`
 
 ## Why?
 
