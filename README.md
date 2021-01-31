@@ -6,6 +6,10 @@
 ![GitHub license](https://badgen.net/github/license/TinkerStorm/validate)
 ![GitHub stars](https://badgen.net/github/stars/TinkerStorm/validate)
 
+## Known Issues
+
+- [#2 - Use of 'options.optional'](https://github.com/TinkerStorm/validate/issues/2)
+
 ## Why?
 
 Why not? Some code is designed to look like it shouldn't exist, but does anyway and works just as well. It was originally designed to be a simple 'private' method that would sit in a class structure or module without the need to use it elsewhere.
