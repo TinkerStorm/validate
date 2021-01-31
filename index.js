@@ -34,7 +34,8 @@ export function validate(origin, args) {
 	const check = (value, types, options) => ((options ? options.rest : false) ?
 		multi(value, types) : types.reduce((acc, next) => single(value, next) || acc, false));
 
-	const condition = (result, options) => Boolean(result) || (options.inverse && !result);
+	const condition = (value, result, options) => Boolean(result) || (options.inverse && !result) ||
+		(options.optional && (value === undefined || value === null));
 
 	for (const [name, value, types, options] of args) {
 		[ // Self argument validation
@@ -45,14 +46,14 @@ export function validate(origin, args) {
 		].forEach(([n, v, t, o = {}]) => {
 			const r = check(v, t, o);
 
-			if (!(condition(r, o) && o.optional)) {
+			if (!condition(v, r, o)) {
 				throw error(n, v, t);
 			}
 		});
 
 		const result = check(value, types, options || {});
 
-		if (!condition(result, options || {})) {
+		if (!condition(value, result, options || {})) {
 			throw error(name, value, types);
 		}
 	}
