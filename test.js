@@ -45,7 +45,7 @@ test('add(x: int, y: int) - Custom int resolver', t => {
 	t.assert(add(3, 4) === 7);
 });
 
-test.failing('add(x: number, y?: number) - Optional Argument', t => {
+test('add(x: number, y?: number) - Optional Argument', t => {
 	function add(x, y) {
 		validate('add', [
 			['x', x, ['number']],
@@ -55,5 +55,5 @@ test.failing('add(x: number, y?: number) - Optional Argument', t => {
 		return x + (y || 1);
 	}
 
-	t.throws(() => add(3, '4'), {instanceOf: TypeError});
+	t.is(add(3), 4);
 });
