@@ -51,7 +51,8 @@ A list of arguments that define how the function accepts parameters.
 ---
 
 - `validate.checks[key: string](value?: any) => boolean`
-- `validate.checks.exists(value?: any) => boolean` - Possiblity to move `options.optional` to this predicate...
+- `validate.checks.exists(value?: any) => boolean`
+- `validate.checks.optional(value?: any) => boolean` - Possiblity to move `options.optional` to this predicate...
 - `validate.checks.truthy(value?: any) => boolean`
 - `validate.checks.int(value: int?) => boolean`
 
