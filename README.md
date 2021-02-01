@@ -1,14 +1,18 @@
-# [@tinkerstorm/validate](https://npmjs.org/package/@tinkerstorm/validate)
+# @tinkerstorm/validate
 
-![CI status](https://github.com/TinkerStorm/validate/workflows/CI/badge.svg)
-![NPM build](https://badgen.net/npm/v/@tinkerstorm/validate)
-![NPM types](https://badgen.net/npm/types/@tinkerstorm/validate)
-![GitHub license](https://badgen.net/github/license/TinkerStorm/validate)
-![GitHub stars](https://badgen.net/github/stars/TinkerStorm/validate)
+[![npm (version)](https://badgen.net/npm/v/@tinkerstorm/validate)](https://npm.im/@tinkerstorm/validate)
+[![npm (types)](https://badgen.net/npm/types/@tinkerstorm/validate)](https://npm.im/@tinkerstorm/validate)
+[![npm (downloads)](https://badgen.net/npm/dw/@tinkerstorm/validate)](https://npm.im/@tinkerstorm/validate)
+[![npm (dependants)](https://badgen.net/npm/dependents/@tinkerstorm/validate)](https://npm.im/@tinkerstorm/validate)
 
-## Open Issues
+[![github (workflow)](https://github.com/TinkerStorm/validate/workflows/Build/badge.svg)](https://github.com/TinkerStorm/validate/actions)
+[![github (stars)](https://badgen.net/github/stars/TinkerStorm/validate)](https://github.com/TinkerStorm/validate/stargazers)
+[![github (open-issues)](https://badgen.net/github/open-issues/TinkerStorm/validate)](https://github.com/TinkerStorm/validate/issues)
+[![github (open-prs)](https://badgen.net/github/open-prs/TinkerStorm/validate)](https://github.com/TinkerStorm/validate/pulls)
 
-- [#4 - Thrown error scope](https://github.com/TinkerStorm/validate/issues/4)
+[![linter (xo)](https://badgen.net/badge/🎨%20linter/xo/690DCA)](https://github.com/xojs/xo)
+[![test env (ava)](https://badgen.net/badge/🧰%20toolbox/ava/F84824)](https://github.com/avajs/ava)
+[![discord (chat)](https://badgen.net/badge/discord/chat/7289DA?icon=discord)](https://discord.gg/Bb3JQQG)
 
 ## API
 
