@@ -25,20 +25,21 @@ Where the function is called from (human-readable string).
 #### args
 
 A list of arguments that define how the function accepts parameters.
+> The argument is to be passed as an array, which is then deconstructed into the positional descriptors below.
 
 ---
 
-### ValidateOptions
+### ValidateOptions as [name, value, types, options?]
 
-| Argument           | Type                     | Description                                                                  |
-| ------------------ | ------------------------ | ---------------------------------------------------------------------------- |
-| `name`             | string                   | Name of the argument as a string literal.                                    |
-| `value`            | any                      | The value of the argument as anything that the `types` and `options` accept. |
-| `types`            | string, object, function | An array of type resolvers.                                                  |
-| `options`          | object?                  | Argument options, can be omitted.                                            |
-| `options.inverse`  | boolean?                 | Flip the condition state.                                                    |
-| `options.rest`     | boolean?                 | Process the argument as an array.                                            |
-| `options.optional` | boolean?                 | Make the argument not throw if it's null / undefined. Short hand check.      |
+| Argument           | Type                       | Description                                                                  |
+| ------------------ | -------------------------- | ---------------------------------------------------------------------------- |
+| `name`             | `string`                   | Name of the argument as a string literal.                                    |
+| `value`            | `any`                      | The value of the argument as anything that the `types` and `options` accept. |
+| `types`            | `string, object, function` | An array of type resolvers.                                                  |
+| `options`          | `object?`                  | Argument options, can be omitted.                                            |
+| `options.inverse`  | `boolean?`                 | Flip the condition state.                                                    |
+| `options.rest`     | `boolean?`                 | Process the argument as an array.                                            |
+| `options.optional` | `boolean?`                 | Make the argument not throw if it's null / undefined. Short hand check.      |
 
 ## API (Future)
 
