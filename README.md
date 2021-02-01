@@ -52,18 +52,7 @@ A list of arguments that define how the function accepts parameters.
 
 Why not? Some code is designed to look like it shouldn't exist, but does anyway and works just as well. It was originally designed to be a simple 'private' method that would sit in a class structure or module without the need to use it elsewhere.
 
-```js
-const typeofAny = (target, ...types) => types.some(type => typeof target === type);
-
-// first attempt did not include the options parameter
-function validate(origin, args) {
-  for (let [varName, value, anyof] of args) {
-    if (!typeofAny(value, ...anyof)) {
-      throw new TypeError(`${varName} (${value}) from ${origin} is not of any type ${anyof}`);
-    }
-  }
-}
-```
+At the base level of functionality, it verifies the type declarations, then object derivatives / class structures, and finally functions. While it may not seem like much, the overarching functions with the array, inverse and optional support provide some functionality I had never intended to begin with.
 
 At the end of it all, this first working version probably took around 3 or 4 hours (including testing and minor patches).
 
