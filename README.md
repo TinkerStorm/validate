@@ -62,3 +62,4 @@ While I do like what I've accomplished here, it is still a joke in many ways and
 
 - [@Koltonix](https://github.com/Koltonix) and [@Mistiare](https://github.com/Mistiare) for their guidance and support.
 - [@sindresorhus](https://github.com/sindresorhus) for continuing to provide the basis on how I, personally, should build my modules and projects (or at least a target to aim for).
+  > Also for the amazing toolset of [xo](https://github.com/xojs/xo) and [ava](https://avajs.dev).
