@@ -48,6 +48,23 @@ A list of arguments that define how the function accepts parameters.
 - `validate.one(origin: string, name: string, value: any, types: (string | object | () => boolean)[], options?: ValidateOptions)`
 - `validate.arg(types: (string | object | () => boolean)[], options?: ValidateOptions)`
 
+---
+
+- `validate.checks[key: string](value?: any) => boolean`
+- `validate.checks.exists(value?: any) => boolean` - Possiblity to move `options.optional` to this predicate...
+- `validate.checks.truthy(value?: any) => boolean`
+- `validate.checks.int(value: int?) => boolean`
+
+### Type bound
+
+*This would make use of predicate construction by passing the context of the previous scope through to the child.*
+
+- `validate.checks.min<T>(n: T) => (value: T?) => boolean`
+- `validate.checks.max<T>(n: T) => (value: T?) => boolean`
+- `validate.checks.between<T>(low: T, high: T) => (value: T?) => boolean`
+  > The generic of `T` would infer that the accepted type has already been checked or is yet to be checked, but will default to that of primative `number`.
+  > - Could also be applied to `string` or `Array` when making use of the `.length` property. Either would work.
+
 ## Why?
 
 Why not? Some code is designed to look like it shouldn't exist, but does anyway and works just as well. It was originally designed to be a simple 'private' method that would sit in a class structure or module without the need to use it elsewhere.
