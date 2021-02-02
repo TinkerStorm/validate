@@ -64,7 +64,7 @@ A list of arguments that define how the function accepts parameters.
 - `validate.checks.max<T>(n: T) => (value: T?) => boolean`
 - `validate.checks.between<T>(low: T, high: T) => (value: T?) => boolean`
   > The generic of `T` would infer that the accepted type has already been checked or is yet to be checked, but will default to that of primative `number`.
-  > - Could also be applied to `string` or `Array` when making use of the `.length` property. Either would work.
+  > - Could also be applied to `string` or `Array` when making use of the `.length` property or `.valueOf()` method. Either would work.
 
 ## Why?
 
